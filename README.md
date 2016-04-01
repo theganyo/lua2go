@@ -1,7 +1,7 @@
-Accessing Go via Lua (LuaJit)
-=============================
+Accessing Go via Lua
+====================
 
-This module is designed as a way to allow access from Lua to Go. We use it for easy access to Go libraries from nginx using the LuaJit module.
+This module enables easy access to Go modules from LuaJit and therefore, NGINX with the LuaJit module. So if you need the capabilities of Go in your NGINX processing, you've come to the right place!
 
 To use (see also the [example](./example):
 
@@ -45,5 +45,6 @@ To use (see also the [example](./example):
 
 7. Bask in the glory of all that you've accomplished!
 
+8. To see how Lua2Go can be incorporated into NGINX, check out the [benchmark](./benchmark) example.
 
-BTW: If you want to run some nginx benchmarks, go [here](./benchmark) and have at it!
+Enjoy!
