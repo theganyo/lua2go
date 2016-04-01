@@ -1,0 +1,7 @@
+edgemicro:
+  port: 3003
+  logging:
+    level: warn
+proxies:
+- base_path: /
+  url: http://target:3002

@@ -1,0 +1,19 @@
+{
+  "name": "microproxy",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "Scott Ganyo",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^1.19.0",
+    "connect": "^3.3.5",
+    "debug": "^2.2.0",
+    "js-yaml": "^3.5.5",
+    "microgateway-core": "git@github.com:apigee/microgateway-core.git"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
