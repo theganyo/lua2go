@@ -39,7 +39,11 @@ To use (see also the [example](./example):
     local result = lua2go.ToGo(example.add(1, 1))
     ```
 
-6. Bask in the glory of all that you've accomplished!
+6. Run your app:
+
+    `luajit myapp.lua`
+
+7. Bask in the glory of all that you've accomplished!
 
 
 BTW: If you want to run some nginx benchmarks, go [here](./benchmark) and have at it!
