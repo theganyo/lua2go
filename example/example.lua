@@ -8,8 +8,6 @@ local lua2go = require('lua2go')
 -- load my Go library
 local example = lua2go.Load('./example.so')
 
-print(example)
-
 -- copy just the extern functions from benchmark.h into ffi.cdef structure below
 -- (the boilerplate cgo prologue is already defined for you in lua2go)
 -- this registers your Go functions to the ffi library..
