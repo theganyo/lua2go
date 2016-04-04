@@ -4,4 +4,4 @@ edgemicro:
     level: warn
 proxies:
 - base_path: /
-  url: http://target:3002
+  url: http://localhost:3002
