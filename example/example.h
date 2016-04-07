@@ -28,14 +28,16 @@ typedef GoUint64 GoUint;
 typedef __SIZE_TYPE__ GoUintptr;
 typedef float GoFloat32;
 typedef double GoFloat64;
-typedef __complex float GoComplex64;
-typedef __complex double GoComplex128;
+typedef float _Complex GoComplex64;
+typedef double _Complex GoComplex128;
 
-// static assertion to make sure the file is being used on architecture
-// at least with matching size of GoInt.
+/*
+  static assertion to make sure the file is being used on architecture
+  at least with matching size of GoInt.
+*/
 typedef char _check_for_64_bit_pointer_matching_GoInt[sizeof(void*)==64/8 ? 1:-1];
 
-typedef struct { char *p; GoInt n; } GoString;
+typedef struct { const char *p; GoInt n; } GoString;
 typedef void *GoMap;
 typedef void *GoChan;
 typedef struct { void *t; void *v; } GoInterface;
@@ -52,7 +54,11 @@ extern "C" {
 
 extern GoInt add(GoInt p0, GoInt p1);
 
-extern GoString concat(GoSlice p0, GoString p1);
+extern char* concat(GoSlice p0, GoString p1);
+
+extern void increment(GoInt* p0);
+
+extern void reverse(GoSlice p0);
 
 #ifdef __cplusplus
 }
