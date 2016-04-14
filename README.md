@@ -3,6 +3,8 @@ Accessing Go via Lua
 
 This module enables easy access to Go modules from LuaJit and therefore, NGINX with the LuaJit module. So if you need the capabilities of Go in your NGINX processing, you've come to the right place!
 
+Note: Lua2Go is now available from LuaRocks: http://luarocks.org/modules/scottganyo/lua2go
+
 To use (see also the [example](./example):
 
 1. Write your Go module and `export` your functions:
